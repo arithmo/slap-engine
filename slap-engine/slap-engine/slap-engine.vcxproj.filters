@@ -1,17 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="engine\window\CWindow.cpp">
+      <Filter>engine\window</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\window\game\CGameWindow.h">
+      <Filter>engine\window\game</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\window\game\CGameWindow.cpp">
+      <Filter>engine\window\game</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\CGame.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\graphics\CGraphics.cpp">
+      <Filter>engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\other\CGlobals.cpp">
+      <Filter>engine\other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{fce3954d-3085-423b-bcf2-82cdabd2b9dd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="engine">
+      <UniqueIdentifier>{9e1dd4bc-c08a-4650-9f58-816a17256e88}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="engine\window">
+      <UniqueIdentifier>{5eb8518f-52fa-4353-b325-9e76959e7f2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="engine\window\game">
+      <UniqueIdentifier>{7700c568-1897-446f-bf6d-b05de6d22c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\graphics">
+      <UniqueIdentifier>{73acf15a-f78c-4757-ad28-067a4072956c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\other">
+      <UniqueIdentifier>{bcff939d-bc7a-43a3-903c-ce60ecedddff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utilities\datatypes.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\window\CWindow.h">
+      <Filter>engine\window</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\CGame.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\graphics\CGraphics.h">
+      <Filter>engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\other\CGlobals.h">
+      <Filter>engine\other</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
